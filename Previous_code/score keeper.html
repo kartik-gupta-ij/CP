@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Score Keeper </title>
+    <style>
+        .winner{
+            color: green;
+        }
+        .loser{
+            color: red;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>ping pong score keeper </h1> 
+    <h2><span id=player1>0</span> to <span id=player2 >0</span></h2>
+    <p>Use the buttons below to keep score </p>
+    <form action="/" style="display: block;"> 
+        <label for="playingto">Playing To</label>
+        <select name="playingto" id="playingto" >
+            <option value="9">9</option>
+            <option value="2">2</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="10">10</option>
+        </select>
+    
+    </form>
+    
+    <button id="ad1top1" >+1 player 01</button>
+    <button id="ad1top2">+1 player 02</button>
+    <button id="reset">Reset</button>
+    <script src="score keeper.js"></script>
+
+   
+</body>
+</html>
