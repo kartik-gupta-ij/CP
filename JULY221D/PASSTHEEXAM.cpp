@@ -4,16 +4,12 @@ using namespace std;
 void fun(){
     int x,y,z;
     cin>> x>>y>>z;
-    if(x>y and x>z){
-        cout<<"Alice"<<endl;
+    if(x>=10 and z>=10 and y>=10 and x+y+z>=100 ){
+        cout<<"PASS"<<endl;
     }
-    else if(y>x and y>z){
-        cout<<"Bob"<<endl;
+    else {
+        cout<<"FAIL"<<endl;
     }
-    else if(z>x and z>y){
-        cout<<"Charlie"<<endl;
-    }
-   
 }
 
 

@@ -15,12 +15,12 @@ void fun(){
     }
     for(int i=0;i<x;i++){
         if(ar[i]==x){
-            e=x-i-1;
+            e=i;
         }
     }
     if(o>e){
-        cout<<e+o-1<<endl;
-    }else{cout<<e+o<<endl;}
+        cout<<x-e-1+o-1<<endl;
+    }else{cout<<x-e-1+o<<endl;}
     
 }
 
