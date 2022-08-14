@@ -14,22 +14,24 @@ void fun(){
         return;
     }
     
-    int extra_time=0;
+    int btw=0;
     int total_time=0;
     int i=0;
     while(i!=x-1){
-        if(arr[i]>=arr[i+1]+extra_time && arr[i+1]!=0){
-            total_time=total_time+arr[i]+extra_time;
-            extra_time=0;
-        }else{
-            total_time=total_time+arr[i]+extra_time;
-            extra_time=arr[i+1];
+        if(btw<arr[i]){
+            total_time=arr[i]+total_time;
+            btw=arr[i];
+
+        }
+        else{
+            total_time=arr[i]+total_time;
+
         }
         i++;
 
     }
-    if(extra_time>0){
-        total_time=total_time+extra_time;
+    if(btw>0){
+        total_time=total_time+btw;
     }
 
 
