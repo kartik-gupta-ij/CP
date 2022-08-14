@@ -4,9 +4,16 @@ using namespace std;
 void fun(){
     int x;
     cin>>x;
+    for(int i=0;i*i<x;i++){
+        if((x-2*i)%(2+i)){
+            cout<<"YES"<<endl;
+            return;
+
+        }
+    }
+    cout<<"NOs"<<endl;
 
 
-    cout<<"YES"<<endl;
     
 }
 
