@@ -1,6 +1,10 @@
 #include<stdlib.h>
 #include <stdio.h>
 #include <cmath>
+#define f(l,r) for (int i = l; i < r; i++)
+#define ll long long
+#define ull unsigned long long
+#define abs(x) (x < 0 ? (-x) : x)
 
 void create();
 void display(int n);
